@@ -11,7 +11,7 @@
 }
 
 .navLink {
-  @apply capitalize text-neutral-grayish-violet  duration-500 transition-all ease-in-out hover:text-neutral-very-dark-violet text-xs font-normal;
+  @apply capitalize   duration-500 transition-all ease-in-out hover:text-neutral-very-dark-violet text-xs font-normal inline-block;
 }
 
 .btn {
@@ -20,3 +20,11 @@
 .btn_primary {
   @apply bg-primary-cyan text-white hover:opacity-50 hover:text-white;
 }
+
+.navbar-mobile {
+  @apply flex-col  justify-between items-center  py-4 px-6 rounded-2xl z-10;
+}
+
+/* .navbar-desktop {
+  @apply flex flex-row;
+} */
