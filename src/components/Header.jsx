@@ -6,9 +6,9 @@ function Header() {
     <header className=" flex px-5 my-2 justify-between  md:gap-12  ">
       <h1 className=" text-2xl font-bold cursor-pointer ">Shortly</h1>
       <Navbar />
-      <div className="menu text-3xl md:hidden cursor-pointer text-neutral-grayish-violet">
+      <button className="menu text-3xl md:hidden cursor-pointer text-neutral-grayish-violet">
         <FaBars />
-      </div>
+      </button>
     </header>
   );
 }
