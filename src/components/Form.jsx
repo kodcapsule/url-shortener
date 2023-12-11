@@ -2,7 +2,7 @@ import FormBgDesktop from "../assets/bg-shorten-desktop.svg";
 
 function Form() {
   return (
-    <div className="urlform py-8  rounded-md bg-primary-dark-violet  w-full md:w-7/12 mx-auto  flex flex-row  ">
+    <div className="urlform py-8 px-3 md:px-0 rounded-md form_bg  bg-primary-dark-violet w-11/12 md:w-7/12 mx-auto  flex flex-row z-10 ">
       <form className="  flex flex-col md:flex-row  justify-center gap-4 md:gap-3 w-full">
         <input
           type="text"
