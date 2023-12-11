@@ -4,6 +4,10 @@ import HeroSection from "./components/HeroSection";
 import Section from "./components/Section";
 
 import iconF from "./assets/icon-brand-recognition.svg";
+import iconDetailed from "./assets/icon-detailed-records.svg";
+import iconCustomized from "./assets/icon-fully-customizable.svg";
+import Card from "./components/Card";
+import Button from "./components/Button";
 
 function App() {
   return (
@@ -20,19 +24,34 @@ function App() {
               advance statistics dashboard
             </p>
           </div>
-          <div className="cards">
-            <article className=" relative bg-white shadow-lg rounded-lg  text-center p-2 w-[19rem]">
-              <div className="card-icon w-12 h-12 p-3 rounded-full absolute bg-primary-dark-violet top-[10%] left-0">
-                <img src={`${iconF}`} alt="" />
-              </div>
-              <h4 className=" text-xl font-bold mb-2">Brand Recognition </h4>
-              <p className=" text-xs text-neutral-grayish-violet">
-                Boost your Brand recognition with each click. Generic links
+          <div className="cards p-5 flex flex-col md:flex-row gap-10 md:g-5 justify-center items-center mt-10">
+            <Card
+              icon={iconF}
+              heading="Brand Recognition"
+              content=" Boost your Brand recognition with each click. Generic links
                 don't mean a thing.Branded links help instil confidence in your
-                content.
-              </p>
-            </article>
+                content."
+            />
+            <Card
+              icon={iconDetailed}
+              heading="Detailed Records"
+              content="Gain insights into who is clicking your links. Knowing when and where 
+              people engage with your content helps inform better decisions."
+            />
+            <Card
+              icon={iconCustomized}
+              heading="Fully Customizable"
+              content="Improve brand awareness and content discoverability through customizable 
+              links, supercharging audience engagement."
+            />
           </div>
+        </section>
+
+        <section className=" form_bg  bg-primary-dark-violet container  mx-auto px-4  py-5 flex flex-col justify-center items-center gap-5">
+          <h3 className=" text-2xl text-white font-bold">
+            Boost your links today
+          </h3>
+          <Button buttonText="Get Started" btn_primary="btn_primary" />
         </section>
       </main>
     </>

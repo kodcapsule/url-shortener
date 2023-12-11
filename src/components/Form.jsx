@@ -8,7 +8,7 @@ function Form() {
           type="text"
           name="url"
           placeholder=" shorten a link here"
-          className=" w-full md:w-8/12 p-2 rounded-md text-sm"
+          className=" w-full md:w-8/12 p-2 rounded-md text-sm text-secondary-red outline-secondary-red focus:outline-1 "
         />
 
         <button className=" btn btn_primary rounded">shorten it!</button>
