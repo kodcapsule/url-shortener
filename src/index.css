@@ -33,3 +33,19 @@
   background-image: url("./assets/bg-shorten-desktop.svg");
   background-size: cover;
 }
+
+.topLine::after {
+  content: "";
+  width: 5px;
+  height: 2.8rem;
+  background-color: hsl(180, 66%, 49%);
+  position: absolute;
+  top: -33%;
+  left: 18;
+  z-index: 0;
+}
+
+.clearLine:nth-child(0) ::after {
+  content: "";
+  height: 0px;
+}
