@@ -3,7 +3,7 @@ import NavigationLink from "./NavigationLink";
 
 function MobileNav() {
   return (
-    <nav className="navbar-mobile  text-white font-bold mt-10 bg-primary-dark-violet  md:hidden md:w-full md:flex-row md:justify-between ">
+    <nav className="navbar-mobile absolute top-4 left-40 py-12 text-white font-bold mt-10 bg-primary-dark-violet  md:hidden ">
       <ul className=" flex flex-col justify-center   text-xl items-center  gap-3 md:flex-row md:gap-9">
         <NavigationLink navLinkName="features" />
         <NavigationLink navLinkName="Pricing" />

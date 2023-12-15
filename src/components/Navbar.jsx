@@ -1,13 +1,11 @@
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 
-function Navbar() {
-  const showMobileNav = false;
+function Navbar({ showMobileNav = false }) {
+  // const showMobileNav = true;
   return (
-    <div className="mainNav md:w-full  ">
-      {/*  mobile screen navigation bar  */}
+    <div className="mainNav  md:w-full  ">
       {showMobileNav && <MobileNav />}
-      {/* large screen navigation bar  */}
       <DesktopNav />
     </div>
   );

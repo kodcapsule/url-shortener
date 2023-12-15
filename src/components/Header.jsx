@@ -1,12 +1,21 @@
+import { useState } from "react";
 import Navbar from "./Navbar";
 import { FaBars } from "react-icons/fa6";
 
 function Header() {
+  const [showMobileNave, setShowMobileNave] = useState(false);
+
+  function show() {
+    setShowMobileNave(() => !showMobileNave);
+  }
   return (
-    <header className=" flex px-5 my-2 justify-between  md:gap-12  ">
+    <header className="flex relative my-2 justify-between  md:gap-12 container  mx-auto px-4 bg-yellow-400">
       <h1 className=" text-2xl font-bold cursor-pointer ">Shortly</h1>
-      <Navbar />
-      <button className="menu text-3xl md:hidden cursor-pointer text-neutral-grayish-violet">
+      <Navbar showMobileNav={showMobileNave} />
+      <button
+        className="menu text-3xl md:hidden cursor-pointer text-neutral-grayish-violet"
+        onClick={show}
+      >
         <FaBars />
       </button>
     </header>
