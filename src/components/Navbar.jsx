@@ -2,9 +2,8 @@ import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 
 function Navbar({ showMobileNav = false }) {
-  // const showMobileNav = true;
   return (
-    <div className="mainNav  md:w-full  ">
+    <div className="mainNav   ">
       {showMobileNav && <MobileNav />}
       <DesktopNav />
     </div>

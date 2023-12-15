@@ -21,8 +21,8 @@ function App() {
     <>
       <Header />
       <main>
-        <Section>{<HeroSection />}</Section>
-        <section className=" bg-slate-100 mt-10 container  mx-auto px-4">
+        <HeroSection />
+        <section className=" bg-slate-100  container  mx-auto px-4">
           <Form />
           <div className="intro flex justify-center items-center flex-col mt-10">
             <h2 className=" text-4xl font-bold">Advance Statistics</h2>
@@ -55,7 +55,6 @@ function App() {
               heading="Fully Customizable"
               content="Improve brand awareness and content discoverability through customizable 
               links, supercharging audience engagement."
-              showline={false}
             />
           </div>
         </section>

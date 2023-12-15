@@ -25,10 +25,6 @@
   @apply flex-col  justify-between items-center  py-4 px-6 rounded-2xl z-10;
 }
 
-/* .navbar-desktop {
-  @apply flex flex-row;
-} */
-
 .form_bg {
   background-image: url("./assets/bg-shorten-desktop.svg");
   background-size: cover;
