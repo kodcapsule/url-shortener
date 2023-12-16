@@ -12,7 +12,7 @@
 }
 
 .navLink {
-  @apply capitalize   duration-500 transition-all ease-in-out hover:text-neutral-very-dark-violet text-xs font-normal inline-block;
+  @apply capitalize  duration-500 transition-all ease-in-out hover:text-neutral-very-dark-violet text-xs font-normal inline-block;
 }
 
 .btn {

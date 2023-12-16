@@ -1,14 +1,10 @@
-import Form from "./components/Form";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
-// import Section from "./components/Section";
+import Section from "./components/Section";
 
-import iconF from "./assets/icon-brand-recognition.svg";
-import iconDetailed from "./assets/icon-detailed-records.svg";
-import iconCustomized from "./assets/icon-fully-customizable.svg";
-import Card from "./components/Card";
-import Button from "./components/Button";
 import Footer from "./components/Footer";
+import AdvanceStatistics from "./components/AdvanceStatistics";
+import BoostSection from "./components/BoostSection";
 
 function App() {
   return (
@@ -16,50 +12,12 @@ function App() {
       <main className=" mx-6 ">
         <Header />
         <HeroSection />
-        <section className=" bg-slate-100  container  mx-auto px-4">
-          <Form />
-          <div className="intro flex justify-center items-center flex-col mt-10 text-center  ">
-            <h2 className=" text-5xl font-bold">Advance Statistics</h2>
-            <p className=" text-xs text-neutral-grayish-violet pt-2">
-              Track how your links are performing across the web with our
-              advance statistics dashboard
-            </p>
-          </div>
-          <div className="cards p-5 flex flex-col md:flex-row gap-16 md:g-5 justify-center items-center mt-10">
-            <div className="card">
-              <Card
-                icon={iconF}
-                heading="Brand Recognition"
-                content=" Boost your Brand recognition with each click. Generic links
-                don't mean a thing.Branded links help instil confidence in your
-                content."
-                showline={false}
-              />
-            </div>
-
-            <Card
-              icon={iconDetailed}
-              heading="Detailed Records"
-              content="Gain insights into who is clicking your links. Knowing when and where 
-              people engage with your content helps inform better decisions."
-              showline={false}
-            />
-            <Card
-              icon={iconCustomized}
-              heading="Fully Customizable"
-              content="Improve brand awareness and content discoverability through customizable 
-              links, supercharging audience engagement."
-              showline={false}
-            />
-          </div>
-        </section>
-
-        <section className=" form_bg  bg-primary-dark-violet container  mx-auto px-4  py-5 flex flex-col justify-center items-center gap-5">
-          <h3 className=" text-2xl text-white font-bold">
-            Boost your links today
-          </h3>
-          <Button buttonText="Get Started" btn_primary="btn_primary" />
-        </section>
+        <Section>
+          <AdvanceStatistics />
+        </Section>
+        <Section>
+          <BoostSection />
+        </Section>
         <Footer />
       </main>
     </>

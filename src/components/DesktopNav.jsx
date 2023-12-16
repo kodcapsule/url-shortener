@@ -9,8 +9,8 @@ function DesktopNav() {
         <NavigationLink navLinkName="Pricing" />
         <NavigationLink navLinkName="Resources" />
       </ul>
-      <ul className=" flex flex-col justify-center items-center gap-3 md:flex-row md:gap-9  ">
-        <Button buttonText="login" />
+      <ul className=" flex flex-col justify-center items-center gap-3 md:flex-row md:gap-9 text-neutral-grayish-violet ">
+        <NavigationLink navLinkName="login" />
         <Button buttonText="logout" btn_primary="btn_primary" />
       </ul>
     </nav>

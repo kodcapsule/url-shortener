@@ -10,7 +10,7 @@ function Header() {
     setShowMobileNave(() => !showMobileNave);
   }
   return (
-    <header className="flex relative  py-2  w-full justify-between md:gap-12 container  mx-auto px-4  ">
+    <header className="flex relative py-2  w-full justify-between md:gap-12 container  mx-auto px-4  ">
       <h1 className=" text-2xl font-bold cursor-pointer ">Shortly</h1>
       <Navbar showMobileNav={showMobileNave} />
       <button
