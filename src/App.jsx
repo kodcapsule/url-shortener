@@ -13,14 +13,14 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <Header />
-      <main>
+      <main className=" mx-6 ">
+        <Header />
         <HeroSection />
         <section className=" bg-slate-100  container  mx-auto px-4">
           <Form />
-          <div className="intro flex justify-center items-center flex-col mt-10">
-            <h2 className=" text-4xl font-bold">Advance Statistics</h2>
-            <p className=" text-sm text-neutral-grayish-violet">
+          <div className="intro flex justify-center items-center flex-col mt-10 text-center  ">
+            <h2 className=" text-5xl font-bold">Advance Statistics</h2>
+            <p className=" text-xs text-neutral-grayish-violet pt-2">
               Track how your links are performing across the web with our
               advance statistics dashboard
             </p>
@@ -67,53 +67,3 @@ function App() {
 }
 
 export default App;
-
-// function FooterNav({ heading, navlinkList }) {
-//   return (
-//     <nav>
-//       <h4 className=" text-base  text-white font-semibold mb-2 ">{heading}</h4>
-//       <ul className=" gap-2 flex flex-col">
-//         {navlinkList.map((link) => (
-//           <NavLinkItem linkName={link} key={link} />
-//         ))}
-//       </ul>
-//     </nav>
-//   );
-// }
-
-// function SocialMedia({ logo }) {
-//   return (
-//     <img
-//       src={`${logo}`}
-//       alt="Facebook Icon "
-//       className=" w-5 h-5  hover:fill-primary-cyan hover:cursor-pointer"
-//     />
-//   );
-// }
-
-// function NavLinkItem({ linkName }) {
-//   return (
-//     <li className=" text-xs text-neutral-grayish-violet hover:text-primary-cyan hover:cursor-pointer ">
-//       <a href="#">{linkName}</a>
-//     </li>
-//   );
-// }
-
-// FOOTER
-
-// <footer className=" bg-neutral-very-dark-violet container mx-auto pb-10 pt-5">
-//   <div className="footerContainer grid grid-cols-1 gap-10 place-items-center md:gap-5 md:place-items-start  md:grid-cols-5 px-10 pt-6">
-//     <h1 className=" text-2xl font-bold cursor-pointer text-white  ">Shortly</h1>
-//     <FooterNav heading="Features" navlinkList={navlinks1} />
-//     <FooterNav heading="Resources" navlinkList={navlinks2} />
-//     <FooterNav heading="Company" navlinkList={navlinks3} />
-
-//     {/*  */}
-//     <div className="socialMediaLogos flex  gap-3">
-//       <SocialMedia logo={FacebookIcon} />
-//       <SocialMedia logo={TwitterIcon} />
-//       <SocialMedia logo={PinteresIcon} />
-//       <SocialMedia logo={InstagramIcon} />
-//     </div>
-//   </div>
-// </footer>
