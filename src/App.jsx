@@ -1,22 +1,16 @@
 import Form from "./components/Form";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
-import Section from "./components/Section";
+// import Section from "./components/Section";
 
 import iconF from "./assets/icon-brand-recognition.svg";
 import iconDetailed from "./assets/icon-detailed-records.svg";
 import iconCustomized from "./assets/icon-fully-customizable.svg";
-import FacebookIcon from "./assets/icon-facebook.svg";
-import InstagramIcon from "./assets/icon-instagram.svg";
-import PinteresIcon from "./assets/icon-pinterest.svg";
-import TwitterIcon from "./assets/icon-twitter.svg";
 import Card from "./components/Card";
 import Button from "./components/Button";
+import Footer from "./components/Footer";
 
 function App() {
-  const navlinks1 = ["Link Shortening", "Branded Links", "Analytics"];
-  const navlinks2 = ["Blog", "Developers", "Support"];
-  const navlinks3 = ["About", "Our Team", "Careers", "Contact"];
   return (
     <>
       <Header />
@@ -55,6 +49,7 @@ function App() {
               heading="Fully Customizable"
               content="Improve brand awareness and content discoverability through customizable 
               links, supercharging audience engagement."
+              showline={false}
             />
           </div>
         </section>
@@ -65,25 +60,7 @@ function App() {
           </h3>
           <Button buttonText="Get Started" btn_primary="btn_primary" />
         </section>
-
-        <footer className=" bg-neutral-very-dark-violet container mx-auto pb-10 pt-5">
-          <div className="footerContainer grid grid-cols-1 gap-10 place-items-center md:gap-5 md:place-items-start  md:grid-cols-5 px-10 pt-6">
-            <h1 className=" text-2xl font-bold cursor-pointer text-white  ">
-              Shortly
-            </h1>
-            <FooterNav heading="Features" navlinkList={navlinks1} />
-            <FooterNav heading="Resources" navlinkList={navlinks2} />
-            <FooterNav heading="Company" navlinkList={navlinks3} />
-
-            {/*  */}
-            <div className="socialMediaLogos flex  gap-3">
-              <SocialMedia logo={FacebookIcon} />
-              <SocialMedia logo={TwitterIcon} />
-              <SocialMedia logo={PinteresIcon} />
-              <SocialMedia logo={InstagramIcon} />
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </main>
     </>
   );
@@ -91,33 +68,52 @@ function App() {
 
 export default App;
 
-function FooterNav({ heading, navlinkList }) {
-  return (
-    <nav>
-      <h4 className=" text-base  text-white font-semibold mb-2 ">{heading}</h4>
-      <ul className=" gap-2 flex flex-col">
-        {navlinkList.map((link) => (
-          <NavLinkItem linkName={link} key={link} />
-        ))}
-      </ul>
-    </nav>
-  );
-}
+// function FooterNav({ heading, navlinkList }) {
+//   return (
+//     <nav>
+//       <h4 className=" text-base  text-white font-semibold mb-2 ">{heading}</h4>
+//       <ul className=" gap-2 flex flex-col">
+//         {navlinkList.map((link) => (
+//           <NavLinkItem linkName={link} key={link} />
+//         ))}
+//       </ul>
+//     </nav>
+//   );
+// }
 
-function SocialMedia({ logo }) {
-  return (
-    <img
-      src={`${logo}`}
-      alt="Facebook Icon "
-      className=" w-5 h-5  hover:fill-primary-cyan hover:cursor-pointer"
-    />
-  );
-}
+// function SocialMedia({ logo }) {
+//   return (
+//     <img
+//       src={`${logo}`}
+//       alt="Facebook Icon "
+//       className=" w-5 h-5  hover:fill-primary-cyan hover:cursor-pointer"
+//     />
+//   );
+// }
 
-function NavLinkItem({ linkName }) {
-  return (
-    <li className=" text-xs text-neutral-grayish-violet hover:text-primary-cyan hover:cursor-pointer ">
-      <a href="#">{linkName}</a>
-    </li>
-  );
-}
+// function NavLinkItem({ linkName }) {
+//   return (
+//     <li className=" text-xs text-neutral-grayish-violet hover:text-primary-cyan hover:cursor-pointer ">
+//       <a href="#">{linkName}</a>
+//     </li>
+//   );
+// }
+
+// FOOTER
+
+// <footer className=" bg-neutral-very-dark-violet container mx-auto pb-10 pt-5">
+//   <div className="footerContainer grid grid-cols-1 gap-10 place-items-center md:gap-5 md:place-items-start  md:grid-cols-5 px-10 pt-6">
+//     <h1 className=" text-2xl font-bold cursor-pointer text-white  ">Shortly</h1>
+//     <FooterNav heading="Features" navlinkList={navlinks1} />
+//     <FooterNav heading="Resources" navlinkList={navlinks2} />
+//     <FooterNav heading="Company" navlinkList={navlinks3} />
+
+//     {/*  */}
+//     <div className="socialMediaLogos flex  gap-3">
+//       <SocialMedia logo={FacebookIcon} />
+//       <SocialMedia logo={TwitterIcon} />
+//       <SocialMedia logo={PinteresIcon} />
+//       <SocialMedia logo={InstagramIcon} />
+//     </div>
+//   </div>
+// </footer>

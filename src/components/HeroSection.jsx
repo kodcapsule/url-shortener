@@ -7,7 +7,7 @@ function HeroSection() {
     <div className="heroContainer container  mx-auto px-4 ">
       <div className=" flex flex-col-reverse md:flex-row gap-20 md:mt-12 md:justify-between  ">
         <div className=" flex flex-col mainText md:pl-16 md:w-[40%] text-center justify-center items-center md:text-left  pb-5  ">
-          <h1 className=" font-extrabold text-3xl mb-1  text-neutral-very-dark-violet md:text-5xl lg:text-7xl leading-7">
+          <h1 className=" font-extrabold text-3xl mb-1  text-neutral-very-dark-violet md:text-5xl lg:text-6xl leading-7">
             More than just shorter links
           </h1>
           <p className=" font-normal text-sm md:text-lg text-neutral-gray mb-5">
