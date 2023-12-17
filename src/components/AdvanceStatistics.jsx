@@ -17,7 +17,7 @@ function AdvanceStatistics() {
         </div>
       </div>
 
-      <div className="advanceStatistics pt-[33rem] md:pt-[20rem] ">
+      <div className="advanceStatistics pt-[35rem] md:pt-[20rem] ">
         <div className="intro flex justify-center items-center flex-col mt-10 text-center  ">
           <h2 className=" text-5xl font-bold">Advance Statistics</h2>
           <p className=" text-xs text-neutral-grayish-violet pt-2">
