@@ -31,18 +31,6 @@
   background-size: cover;
 }
 
-.topLine::after {
-  content: "";
-  width: 5px;
-  height: 2.8rem;
-  background-color: hsl(180, 66%, 49%);
-  position: absolute;
-  top: -33%;
-  left: 18;
-  z-index: 0;
-}
-
-.clearLine:nth-child(0) ::after {
-  content: "";
-  height: 0px;
+.line {
+  @apply after:h-[60%] after:w-[5px] after:top-[50] after:left-[50] after:bg-primary-cyan after:absolute after:z-0 md:after:h-[5px] md:after:w-[50%] md:after:top-[50] md:after:left-[50];
 }

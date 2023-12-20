@@ -4,7 +4,7 @@ function NavigationLink({ navLinkName }) {
   return (
     <li className="">
       {/* <NavLink to="#"></NavLink> */}
-      <a href="#" className=" navLink  ">
+      <a href="#price" className=" navLink  ">
         {navLinkName}
       </a>
     </li>

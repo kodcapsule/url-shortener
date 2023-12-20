@@ -7,7 +7,10 @@ import ShortLink from "./ShortLink";
 
 function AdvanceStatistics() {
   return (
-    <div className="bg-slate-100  container  mx-auto mt-20 relative">
+    <div
+      className="bg-slate-100  container  mx-auto mt-20 relative "
+      id="price"
+    >
       <div className="formContainer  w-[80%] text-center mx-auto p-2 absolute -top-16 left-[3rem] sm:left-16 md:left-20">
         <Form />
         <div className="results">
@@ -25,30 +28,36 @@ function AdvanceStatistics() {
             statistics dashboard
           </p>
         </div>
-        <div className="cards p-5 flex flex-col   md:flex-row  gap-16 md:gap-5 items-center justify-center   mt-10 place-items-center  w-full">
-          <Card
-            icon={iconF}
-            heading="Brand Recognition"
-            content=" Boost your Brand recognition with each click. Generic links
+        <div className="cards p-5 flex flex-col   md:flex-row  gap-10 md:gap-5 items-center justify-center   mt-10 place-items-center   relative  w-full md:w-[90%] line">
+          <div className="card">
+            <Card
+              icon={iconF}
+              heading="Brand Recognition"
+              content=" Boost your Brand recognition with each click. Generic links
         don't mean a thing.Branded links help instil confidence in your
         content."
-            showline={false}
-          />
+              showline={false}
+            />
+          </div>
 
-          <Card
-            icon={iconDetailed}
-            heading="Detailed Records"
-            content="Gain insights into who is clicking your links. Knowing when and where 
+          <div className="card mt-5 md:mt-10 ">
+            <Card
+              icon={iconDetailed}
+              heading="Detailed Records"
+              content="Gain insights into who is clicking your links. Knowing when and where 
         people engage with your content helps inform better decisions."
-            showline={false}
-          />
-          <Card
-            icon={iconCustomized}
-            heading="Fully Customizable"
-            content="Improve brand awareness and content discoverability through customizable 
+              showline={false}
+            />
+          </div>
+          <div className="card mt-5 md:mt-20">
+            <Card
+              icon={iconCustomized}
+              heading="Fully Customizable"
+              content="Improve brand awareness and content discoverability through customizable 
         links, supercharging audience engagement."
-            showline={false}
-          />
+              showline={false}
+            />
+          </div>
         </div>
       </div>
     </div>
