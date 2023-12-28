@@ -1,9 +1,8 @@
-import FacebookIcon from "../assets/icon-facebook.svg";
-import InstagramIcon from "../assets/icon-instagram.svg";
-import PinteresIcon from "../assets/icon-pinterest.svg";
-import TwitterIcon from "../assets/icon-twitter.svg";
+import FaceBookIcon from "./FaceBookIcon";
 import FooterNavList from "./FooterNavList";
-import SocialMediaIcon from "./SocialMediaIcon";
+import InstagramIcon from "./InstagramIcon";
+import PinterestIcon from "./PinterestIcon";
+import TwitterIcon from "./TwitterIcon";
 
 function Footer() {
   const navList1 = ["Link Shortening", "Branded Links", "Analytics"];
@@ -19,11 +18,11 @@ function Footer() {
         <FooterNavList heading="Resources" navList={navList2} />
         <FooterNavList heading="Company" navList={navList3} />
 
-        <div className="socialMediaLogos flex  gap-3">
-          <SocialMediaIcon logo={FacebookIcon} description="Facebook icon" />
-          <SocialMediaIcon logo={TwitterIcon} description=" Twitter icon" />
-          <SocialMediaIcon logo={PinteresIcon} description=" Pinterest Icon" />
-          <SocialMediaIcon logo={InstagramIcon} description="Instagram Icon" />
+        <div className="socialMediaLogos flex  gap-4 items-center">
+          <FaceBookIcon />
+          <TwitterIcon />
+          <PinterestIcon />
+          <InstagramIcon />
         </div>
       </div>
     </footer>
