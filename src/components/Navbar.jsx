@@ -3,7 +3,7 @@ import MobileNav from "./MobileNav";
 
 function Navbar({ showMobileNav = false }) {
   return (
-    <div className="mainNav  400 md:w-full md:h-full">
+    <div className="mainNav  md:w-full md:h-full ">
       {showMobileNav && <MobileNav />}
       <DesktopNav />
     </div>
