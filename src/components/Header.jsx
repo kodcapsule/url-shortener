@@ -11,9 +11,8 @@ function Header() {
     setShowMobileNave(() => !showMobileNave);
   }
   return (
-    <header className="flex relative py-2  w-full justify-between md:gap-5 container px-4 mx-auto   ">
+    <header className="flex relative py-3  w-full justify-between md:gap-5 container px-4 mx-auto   ">
       <Logo color="neutral-very-dark-violet" />
-      {/* <h1 className=" text-2xl font-bold cursor-pointer ">Shortly</h1> */}
       <Navbar showMobileNav={showMobileNave} />
       <button
         className="menu text-3xl md:hidden cursor-pointer text-neutral-grayish-violet transition"
